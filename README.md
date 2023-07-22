@@ -11,4 +11,6 @@ Compile with `gcc b32hex.c -o b32hex`
 
 Prints Binary Representation;
 
+Prints Hexadecimal Representation;
+
 Sorts and Prints Input;
