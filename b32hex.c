@@ -6,7 +6,7 @@
 /*   By: dhadding <daniel42.c@engineer.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/23 05:22:58 by dhadding          #+#    #+#             */
-/*   Updated: 2023/07/23 08:46:57 by dhadding         ###   ########.fr       */
+/*   Updated: 2023/07/23 09:09:15 by dhadding         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void err_dup(int size, u32 *bits)
 		{
 			if (bits[i] == bits[j])
 			{
-				printf("Please Remove duplicates;\n");
+				printf("Please remove duplicates;\n");
 				exit(1);
 			}
 			j++;
@@ -104,7 +104,7 @@ u32	con2bin(u32 size, u32 *bits)
 	{
 		if (bits[d] > 31)
 		{
-			printf("Please Enter a bit position below 32;\n");
+			printf("Please enter a bit position below 32;\n");
 			exit(1);
 		}
 		u32 shift = 0b1 << bits[d];
@@ -129,7 +129,7 @@ int main (int argc, char **argv)
 			
 			if (!isNum(argv[i]))
 			{
-				printf("Please Enter Numbers Only;\n");
+				printf("Please enter numbers only;\n");
 				exit(1);
 			
 			}
@@ -150,6 +150,6 @@ int main (int argc, char **argv)
 		bin = con2bin(argc - 1, bits);
 		printf("Hexadecimal Representation = %X\n", bin);
 		free(bits);
-	} else {	printf("Please Enter each bit position that is set... \n Usage: bhex 15 31 0 1 \n");	}
+	} else {	printf("Please enter each bit position that is to be set... \n Usage: bhex 15 31 0 1 \n");	}
 	return (0);
 }
