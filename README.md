@@ -7,6 +7,8 @@ Expects positive numbers;
 
 Expects no more than 32 bits to be set;
 
+Expects bit position set < 32;
+
 Compile with `gcc b32hex.c -o b32hex`
 
 Prints Binary Representation;
