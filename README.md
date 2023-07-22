@@ -14,3 +14,5 @@ Prints Binary Representation;
 Prints Hexadecimal Representation;
 
 Sorts and Prints Input;
+
+Usage: ./b32hex 0 6 2 31
